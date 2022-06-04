@@ -83,4 +83,89 @@ q::before {
 q::after {
     content: "\201D";
 }
-    
+
+@media print {
+    /* este css só será aplicado quando a página for impresssa
+    remove qualquer propriedade de stilo e mantem tudo na cor preta*/
+    *{
+        background: transparent !important;
+        border-color: #000 !important;
+        box-shadow: none !important;
+        color: #000 !important;
+        text-shadow: none !important;
+        
+    }
+}
+
+/* estilo da tabla definindo largura, cores p as bordas das celulas, alinha
+mentos e definicao de links*/
+table{
+    width: 500px;
+}
+
+td {
+    border: 1px dotted #666;
+    padding: 5px;
+}
+
+/*a: para o link*/
+td a {
+    color:  #3b5998;
+}
+
+/* .: para as class*/
+.expense, .profit, .actions {
+     text-align: right;
+}
+
+.expense { color: red;}
+.profit { color: green;}
+
+/*para o link da class actions */
+.actions a {
+    font-size: 0.9m;
+    color: white;
+    padding: 2px 5px;
+    background-color: #3b5998;
+    text-decoration: none;
+}
+
+@media print {
+    * {
+        color: #000 !important;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        border-color: #000;
+    }
+
+    a::after {
+        content: "(" attr(href) ")";
+        margin-left: 2px;
+    }
+
+    actions {
+        display: none;
+    }
+}
+
+/* pseudo -elementos: adicionndo caracteristicas a cada celula*/
+.expense::before {
+    content: "- ";
+}
+
+.expense::after {
+    content: "- Despesa";
+}
+
+.profit::before {
+    content: "+ ";
+}
+
+.profit::after {
+    content: " - Receita"
+}
