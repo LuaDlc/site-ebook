@@ -47,6 +47,22 @@ h1::after {
     position: relative;
     width: 300px;
 }
+.help {
+    box-shadow: 3px 3px 3px #aaa;
+}
+
+/*formulários com sombra */
+input {
+    border: 1px solid #999;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25) inset;
+    padding: 2px 5px;
+}
+
+input:focus{
+    border-color: #35861b;
+    box-shadow: 0 0 5px #35861b, 2px 2px rgba(0, 0, 0, 0.5) inset;
+    outline: none;
+}
 
 /*SIMULANDO UMA SETA NA LATERAL DA CAIXA DE AJUDA QUE APONTA PARA O CAMPO DO FORMULARIO
 USANDO O BEFORE*/
@@ -269,4 +285,131 @@ div {
     top: -10px;
     width: 23px;
 }
+
+
+figure {
+    position: relative;
+}
+
+img {
+    display: block;
+}
+
+/*Adiciona um texto na imagem */
+figcaption {
+    bottom: 5px;
+    margin: 0 5px;
+    padding: 5px;
+    position: absolute;
+    width: 300px;
+}
+
+/*Adiciona um fundo preto com opacidade de 0.5 */
+figcaption {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0, 5);
+    color: #fff;
+}
+
+ul {
+    height: 35px;
+    list-style: none;
+    padding: 0;
+    width: 210px;
+}
+
+li {
+    float: left;
+    line-height: 35px;
+    font-size: 0.9em;
+    width: 50px;
+    text-align: center;
+}
+
+ul {
+    background-color: rgb(173, 169, 169);
+    color: white;
+}
+
+/*aplicando borda preta */
+ul {
+    border:  1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* bordas brancas e pretas*/
+li {
+    border-left:  1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+li:first-child {
+    border-left: none;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+
+
+
+/*alinahndo os elementos da lista horizontalmente com float e definindo um taamnho padrão para cada link do menu  uma cor de fundo*/
+.nav {
+    background-color: #b9522d;
+    height: 40px;
+    list-style: none;
+    padding: 0;
+    width: 220px;
+}
+
+.nav li{
+    float: left;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 70px;
+}
+
+.nav a {
+    color: white;
+}
+
+.nav .current {
+    background-color: #a64a28;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*EXEMPLOSIMPLES DE TEXT-SHADOW */
+h1 {
+    background-color: #1d9ac0;
+    color: #fff;
+    padding: 10px;
+    text-shadow: 2px 4px 2px tgba(0, 0, 0,0.3);
+}
+
+/* textos de estado utilziando text-shadow*/
+.status {
+    display: inline-block;
+    font-weight: bold;
+    font-weight: bold;
+    padding: 7px 10px;
+}
+
+.failed {
+    background-color: #bd2c00;
+}
+
+.shipped {
+    background-color: #6cc644;
+}
+
+.processing {
+    background-color: #fc9800;
+}
+
+
+
+
+
 
