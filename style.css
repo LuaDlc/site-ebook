@@ -387,6 +387,7 @@ h1 {
 */
 
 /* textos de estado utilziando text-shadow*/
+/* 
 .status {
     display: inline-block;
     font-weight: bold;
@@ -474,9 +475,9 @@ h2 {
      text-decoration: none;
      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
  }
-
+*/
  /* criando as bordas entre os links*/
-
+/*
  .icon {
      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
      border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -508,5 +509,57 @@ h2 {
      width: 600px;
  }
  
+*/
 
+img {
+ float: left;
+ margin-right: 10px;
+}
 
+.posts {
+    width: 600px;
+}
+
+h1 {
+    float: left;
+    margin: 0 0 20px;
+}
+
+.timestamp {
+    background-color: #000;
+    color: #fff;
+    float: right;
+    font-size: 0.9em;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+p {
+    clear: both;
+}
+
+.posts {
+    float: left;
+    width: 600px;
+}
+
+aside {
+    background-color: #fffbe4;
+    border: 1px solid #c9bc8f;
+    float: right;
+    padding: 10px;
+    width: 200px;
+}
+
+aside h3 {
+    margin: 0;
+}
+
+.page {
+    padding: 10px;
+    margin: 0 auto;
+    width: 940px;
+}
+.page {
+    background-color: #e8e8e8;
+}
