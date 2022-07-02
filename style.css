@@ -563,3 +563,46 @@ aside h3 {
 .page {
     background-color: #e8e8e8;
 }
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;    
+}
+
+/*definir estilo basioo para formato da caixa com largur e altura fixa */
+.notice {
+    background-color: #fff;
+    border:1px solid #000;
+    height: 130px;
+    padding: 10px;
+    width: 380px;
+
+}
+
+/* posicionar o modal no centro da pagina */
+
+.notice {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+.notice {
+    background-color: #fff;
+    border: 1px solid #000;
+    height: 130px;
+    padding: 10px;
+    width: 380px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin:-75px 0 0 -200px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%
+}
